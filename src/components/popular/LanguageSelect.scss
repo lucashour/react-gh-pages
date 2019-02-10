@@ -1,0 +1,10 @@
+.LanguageSelect {
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

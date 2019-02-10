@@ -1,0 +1,22 @@
+.Repos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .item {
+    margin: 20px;
+    text-align: center;
+
+    .item-rank {
+      font-size: 20px;
+      margin: 10px;
+    }
+
+    .avatar {
+      width: 150px;
+      border-radius: 5%;
+    }
+  }
+}
+
+

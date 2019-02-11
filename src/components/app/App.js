@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {
   BrowserRouter,
+  Redirect,
   Route,
   Switch
 } from 'react-router-dom';
@@ -24,7 +25,7 @@ export default class App extends Component {
             <Route exact path={Routes.BATTLE} component={Battle} />
             <Route path={Routes.BATTLE_RESULTS} component={Results} />
             <Route path={Routes.POPULAR} component={Popular} />
-            <Route render={() => <p>Not Found</p>} />
+            <Route render={() => <Redirect to={Routes.HOME} />} />
           </Switch>
         </div>
       </BrowserRouter>
